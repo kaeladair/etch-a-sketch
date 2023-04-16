@@ -11,3 +11,12 @@ for (let i = 0; i < 16 * 16; i++) {
     });
 }
 
+// Add a click event listener to the "Clear" button
+const clearButton = document.getElementById('clear-button');
+clearButton.addEventListener('click', () => {
+    const gridItems = document.querySelectorAll('.grid-item');
+    for (const gridItem of gridItems) {
+        gridItem.style.backgroundColor = 'white';
+    }
+});
+
